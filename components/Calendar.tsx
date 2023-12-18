@@ -7,7 +7,7 @@ interface CalendarProps {
   numberOfDays: number;
 }
 
-const Calendar: React.FC<CalendarProps> = ({ month, numberOfDays }) => {
+function Calendar({ month, numberOfDays }: CalendarProps) {
   const [buttonWidth, setButtonWidth] = useState(0);
 
   useEffect(() => {
